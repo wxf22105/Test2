@@ -6,4 +6,5 @@ package com.wxf.helloworld;
 
 public class XActyvity2 {
     public int x4;
+
 }
