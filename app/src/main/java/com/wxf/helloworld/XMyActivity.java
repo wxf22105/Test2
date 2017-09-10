@@ -8,6 +8,8 @@ public class XMyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Main activity
         setContentView(R.layout.activity_xmy);
     }
 }
