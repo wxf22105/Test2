@@ -5,38 +5,50 @@
     android:layout_height="match_parent"
     android:background= "@color/xYellow"
     android:orientation = "vertical"
-    android:weightSum = "8"
     >
-    <!-- android:weightSum = "5" -->
+
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background = "#000">
 
         <View
-            android:layout_width="150dp"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:background = "#0FF"
         />
-        <!-- android:layout_weight="3" -->
-
 
         <View
-            android:layout_width="150dp"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:background = "#F00"
          />
 
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background = "#FFF">
+
         <View
-            android:layout_width="150dp"
-            android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:background = "#F0F"
             />
 
         <View
-            android:layout_width="150dp"
-            android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:background = "#0F0"
             />
+
+    </LinearLayout>
 
 ></LinearLayout>
