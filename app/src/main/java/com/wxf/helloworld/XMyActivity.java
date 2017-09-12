@@ -13,9 +13,10 @@ public class XMyActivity extends AppCompatActivity {
         //in main activity
         setContentView(R.layout.activity_xmy);
 
+        String xString1 = getString(R.string.xMessage1);
         for (int i = 0; i < 7; i++)
         {
-            Toast.makeText(XMyActivity.this, "Kukuuu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(XMyActivity.this, xString1, Toast.LENGTH_SHORT).show();
         }
     }
 }
