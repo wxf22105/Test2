@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background= "@color/xYellow"
-    android:orientation = "vertical"
-    android:gravity="bottom"
     >
-    <TextView
+
+    <View
+        android:id="@+id/xViewGreen"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_gravity="right"
         android:background = "#0F0"
-        android:text="@string/xMessage1"
-        android:gravity="top|center_horizontal"
     />
 
-></LinearLayout>
+    <View
+        android:id="@+id/xViewRed"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background = "#F00"
+        android:layout_below="@id/xViewGreen"
+    />
+
+    <View
+        android:id="@+id/xViewBlue"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background = "#00F"
+        android:layout_below="@id/xViewRed"
+        />
+
+    <View
+        android:id="@+id/xViewMag"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background = "#F0F"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_toRightOf="@id/xViewRed"
+
+        android:layout_below="@id/xViewGreen"
+        android:layout_above="@id/xViewBlue"
+        />
+
+></RelativeLayout>
